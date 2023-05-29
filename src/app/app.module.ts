@@ -18,6 +18,7 @@ import {MatIconModule} from "@angular/material/icon";
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NgxDatatableComponent } from './components/ngx-datatable/ngx-datatable.component';
 import {NgApexchartsModule} from "ng-apexcharts";
+import {NgxDatatableModule} from "@swimlane/ngx-datatable";
 
 @NgModule({
   declarations: [
@@ -28,21 +29,22 @@ import {NgApexchartsModule} from "ng-apexcharts";
     DashboardComponent,
     NgxDatatableComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatDialogModule,
-    ReactiveFormsModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatFormFieldModule,
-    MatInputModule,
-    HttpClientModule,
-    NgApexchartsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatDialogModule,
+        ReactiveFormsModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatFormFieldModule,
+        MatInputModule,
+        HttpClientModule,
+        NgApexchartsModule,
+        NgxDatatableModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
